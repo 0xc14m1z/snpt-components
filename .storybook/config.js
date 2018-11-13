@@ -1,7 +1,17 @@
-import { configure } from '@storybook/react';
+import React from 'react'
+import { configure, addDecorator } from '@storybook/react'
+import StoryRouter from 'storybook-react-router'
+import { withKnobs } from '@storybook/addon-knobs'
 
-function loadStories() {
-  require('../src/stories');
-}
+addDecorator(StoryRouter())
+addDecorator(withKnobs)
+addDecorator(story => (
+  <div style={{ padding: "50px", background: "#EBEBEB" }}>
+    {story()}
+  </div>
+))
 
-configure(loadStories, module);
+const req = require.context('../src', true, /\.stories\.js$/)
+const loadStories = () => req.keys().forEach(filename => req(filename))
+
+configure(loadStories, module)
