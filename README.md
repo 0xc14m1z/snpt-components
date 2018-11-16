@@ -5,6 +5,7 @@
 - [ ] Button
 - [ ] Dates
 - [ ] FadeInImage
+- [x] FaIcon
 - [ ] Hs
 - [ ] Icon
 - [ ] P
