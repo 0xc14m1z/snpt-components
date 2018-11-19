@@ -24,9 +24,9 @@ export default class FaIcon extends PureComponent {
   }
 
   static propTypes = {
-    weight: PropTypes.oneOf(Object.values(weights)),
+    weight: PropTypes.oneOf(Object.values(FaIcon.weights)),
     name: PropTypes.string.isRequired,
-    size: PropTypes.oneOf(Object.values(sizes)),
+    size: PropTypes.oneOf(Object.values(FaIcon.sizes)),
     className: PropTypes.string
   }
 
