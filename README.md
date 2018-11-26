@@ -6,6 +6,7 @@
 - [x] Dates
 - [ ] FadeInImage
 - [x] FaIcon
+- [x] Font
 - [ ] Hs
 - [ ] Icon
 - [ ] P
