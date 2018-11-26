@@ -53,7 +53,7 @@
 
 - [x] Logo
 - [ ] Overlay
-- [ ] RedCut
+- [x] RedCut
 - [x] Screen
 - [ ] Section
 - [x] Swiper
