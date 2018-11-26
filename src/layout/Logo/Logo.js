@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
@@ -35,10 +35,14 @@ const StyledLink = styled(SanitizedLink)`
   }
 `
 
-const Logo = props => <StyledLink {...props} to="/" title="Home" />
+class Logo extends PureComponent {
+  static propTypes = {
+    full: PropTypes.bool
+  }
 
-Logo.propTypes = {
-  full: PropTypes.bool
+  render() {
+    return <StyledLink {...this.props} to="/" title="Home" />
+  }
 }
 
-export default React.memo(Logo)
+export default Logo
