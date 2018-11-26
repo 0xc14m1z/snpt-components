@@ -52,7 +52,6 @@
 ## layout
 
 - [x] Logo
-- [ ] Overlay
 - [x] RedCut
 - [x] Screen
 - [ ] Section
@@ -63,7 +62,7 @@
 - [ ] FooterMenu
 - [ ] FooterMenuItem
 - [ ] MainMenu
-- [ ] MainMenuItem
+- [x] MenuItem
 - [ ] SubMenu
 - [ ] SubMenuItem
 - [x] ScrollToTop
