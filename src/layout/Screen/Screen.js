@@ -19,7 +19,7 @@ const Container = styled.div`
 
 class Screen extends PureComponent {
   static propTypes = {
-    children: PropTypes.element.isRequired
+    children: PropTypes.node.isRequired
   }
 
   render() {
