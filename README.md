@@ -9,7 +9,7 @@
 - [x] Font
 - [ ] Hs
 - [ ] Icon
-- [ ] P
+- [x] P
 - [ ] HTML
 
 ### dates
