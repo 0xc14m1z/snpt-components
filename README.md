@@ -3,7 +3,7 @@
 ## base
 
 - [ ] Button
-- [ ] Dates
+- [x] Dates
 - [ ] FadeInImage
 - [x] FaIcon
 - [ ] Hs
@@ -13,11 +13,8 @@
 
 ### dates
 
-- [ ] FormatDate
-- [ ] LongDate
-- [ ] RelativeDay
-- [ ] ShortDate
-- [ ] Time
+- [x] FormatDate
+- [x] ShortDate
 
 ### Hs
 
