@@ -59,9 +59,7 @@
 
 ## navigation
 
-- [ ] FooterMenu
-- [ ] FooterMenuItem
-- [ ] MainMenu
+- [x] Menu
 - [x] MenuItem
 - [ ] SubMenu
 - [ ] SubMenuItem
