@@ -6,7 +6,7 @@
 - [x] Dates
 - [x] FaIcon
 - [x] Font
-- [ ] Hs
+- [x] Hs
 - [ ] Icon
 - [x] P
 - [x] HTML
@@ -21,7 +21,6 @@
 - [x] H1
 - [x] H2
 - [x] H3
-- [ ] H4
 
 ## content
 
