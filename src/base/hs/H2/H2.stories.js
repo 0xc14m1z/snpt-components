@@ -3,6 +3,6 @@ import { storiesOf } from '@storybook/react'
 
 import H2 from './H2'
 
-storiesOf('Base/Hs/H2', module).add('standard', () => (
-  <H2>Lorem ipsum dolor sit amet</H2>
-))
+storiesOf('Base/Hs/H2', module)
+  .add('standard', () => <H2>Lorem ipsum dolor sit amet</H2>)
+  .add('red', () => <H2 red>Lorem ipsum dolor sit amet</H2>)

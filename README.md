@@ -4,7 +4,6 @@
 
 - [ ] Button
 - [x] Dates
-- [ ] FadeInImage
 - [x] FaIcon
 - [x] Font
 - [ ] Hs
@@ -23,7 +22,6 @@
 - [x] H2
 - [x] H3
 - [ ] H4
-- [ ] H5
 
 ## content
 
