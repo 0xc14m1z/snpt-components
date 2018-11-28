@@ -26,6 +26,7 @@
 
   - [x] GreenNumber
   - [x] AcsiLogo
+  - [x] EuropeanEducationLogo
   - [ ] CertificationLogos
   - [ ] HighlightedNumber
   - [ ] OfferSchema
