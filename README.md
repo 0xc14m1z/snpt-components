@@ -56,6 +56,7 @@
   - [x] RedCut
   - [x] Screen
   - [ ] Section
+  - [x] Separator
   - [x] Swiper
 
 ## navigation
