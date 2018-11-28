@@ -10,6 +10,8 @@ const Img = styled.img`
 const alt = `
   Formazione riconosciuta in tutta Europa.
 `
-const EuropeanEducationLogo = () => <Img src={logo} alt={alt} />
+const EuropeanEducationLogo = ({ className }) => (
+  <Img src={logo} alt={alt} className={className} />
+)
 
 export default React.memo(EuropeanEducationLogo)
