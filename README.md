@@ -28,6 +28,7 @@
   - [x] AcsiLogo
   - [x] EuropeanEducationLogo
   - [x] ErepsLogo
+  - [x] Iso9001Logo
   - [ ] CertificationLogos
   - [ ] HighlightedNumber
   - [ ] OfferSchema
