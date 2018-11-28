@@ -29,7 +29,7 @@
   - [x] EuropeanEducationLogo
   - [x] ErepsLogo
   - [x] Iso9001Logo
-  - [ ] CertificationLogos
+  - [x] CertificationLogos
   - [ ] HighlightedNumber
   - [ ] OfferSchema
   - [ ] CoursesTable
