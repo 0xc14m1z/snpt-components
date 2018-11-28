@@ -24,7 +24,7 @@
 
 ## content
 
-- [ ] GreenNumber
+- [x] GreenNumber
 - [ ] CertificationLogos
 - [ ] HighlightedNumber
 - [ ] OfferSchema
