@@ -8,6 +8,7 @@
   - [x] Font
   - [x] Hs
   - [ ] Icon
+  - [x] Lead
   - [x] P
   - [x] HTML
 
