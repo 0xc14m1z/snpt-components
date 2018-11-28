@@ -3,5 +3,6 @@ export default {
   darkRed: '#B1172F',
   redAccent: '#EE1032',
 
-  text: '#484848'
+  text: '#484848',
+  background: '#EBEBEB'
 }
