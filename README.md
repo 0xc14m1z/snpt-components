@@ -58,6 +58,7 @@
   - [ ] Section
   - [x] Separator
   - [x] Swiper
+  - [x] VerticalSeparator
 
 ## navigation
 
