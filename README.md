@@ -65,6 +65,7 @@
 
   - [x] Menu
   - [x] MenuItem
+  - [x] SecondaryMenuItem
   - [ ] SubMenu
   - [ ] SubMenuItem
   - [x] ScrollToTop
