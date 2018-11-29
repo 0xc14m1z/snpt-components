@@ -2,7 +2,7 @@
 
 ## base
 
-  - [ ] Button
+  - [x] Button
   - [x] Dates
   - [x] FaIcon
   - [x] Font
