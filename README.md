@@ -9,6 +9,7 @@
   - [x] Hs
   - [ ] Icon
   - [x] Lead
+  - [x] NegativeButton
   - [x] P
   - [x] HTML
 
