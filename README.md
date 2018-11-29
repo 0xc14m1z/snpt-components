@@ -57,6 +57,7 @@
   - [x] DarkSection
   - [x] Logo
   - [x] RedCut
+  - [x] RedSection
   - [x] Screen
   - [x] Section
   - [x] Separator
