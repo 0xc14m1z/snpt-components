@@ -54,6 +54,7 @@
 
 ## layout
 
+  - [x] DarkSection
   - [x] Logo
   - [x] RedCut
   - [x] Screen
