@@ -57,7 +57,7 @@
   - [x] Logo
   - [x] RedCut
   - [x] Screen
-  - [ ] Section
+  - [x] Section
   - [x] Separator
   - [x] Swiper
   - [x] VerticalSeparator
