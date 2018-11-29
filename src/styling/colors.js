@@ -1,5 +1,5 @@
 export default {
-  red: '#CC1A36',
+  red: '#DE1D3B',
   darkRed: '#B1172F',
   redAccent: '#EE1032',
 
