@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 
 import styling from '../../styling'
 
-const getColor = prop => (prop.negative ? 'white' : styling.colors.text)
+const getColor = props => (props.negative ? 'white' : styling.colors.text)
 
-const getHoverColor = prop => (prop.negative ? styling.colors.text : 'white')
+const getHoverColor = props => (props.negative ? styling.colors.text : 'white')
 
 const SanitizedLink = ({ negative, text, children, ...props }) => (
   <NavLink {...props}>{text || children}</NavLink>
