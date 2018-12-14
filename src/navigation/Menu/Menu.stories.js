@@ -28,3 +28,16 @@ storiesOf('Navigation/Menu', module)
       <MenuItem to="/4" text="Fourth" />
     </Menu>
   ))
+  .add('with many subitems', () => (
+    <Menu>
+      <MenuItem to="/1" text="First" />
+      <MenuItem text="Second">
+        <MenuItem to="/11" text="First" />
+        <MenuItem to="/12" text="Second" />
+        <MenuItem to="/13" text="Third" />
+        <MenuItem to="/14" text="Fourth" />
+      </MenuItem>
+      <MenuItem to="/3" text="Third" />
+      <MenuItem to="/4" text="Fourth" />
+    </Menu>
+  ))
