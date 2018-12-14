@@ -6,12 +6,16 @@ import styling from '../../styling'
 import MenuItem from '../MenuItem'
 
 const Container = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  margin-top: ${styling.gutters.md};
   background: white;
   padding: ${styling.gutters.rg};
   display: flex;
   flex-direction: column;
   align-items: start;
-  max-width: 280px;
+  width: 280px;
   box-sizing: border-box;
 `
 

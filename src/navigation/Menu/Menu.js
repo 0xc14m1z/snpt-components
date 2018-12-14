@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import styling from '../../styling'
 import FaIcon from '../../base/FaIcon'
 import MenuItem from '../MenuItem'
+import SubMenu from '../SubMenu'
 
 const Ul = styled.ul`
   margin: 0px;
@@ -12,6 +13,7 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li`
+  position: relative;
   display: inline-block;
   margin: 0px ${styling.gutters.md} 0px 0px;
   list-style-type: none;
@@ -49,7 +51,7 @@ class Menu extends Component {
 
   close = () => this.setState({ open: null, subItems: null })
 
-  handleToggle = index => (this.isOpen(index) ? this.close() : this.open(index))
+  handleToggle = index => (this.isOpen() ? this.close() : this.open(index))
 
   renderChild = (child, index) => {
     const { text, onClick, ...props } = child.props
@@ -63,7 +65,9 @@ class Menu extends Component {
         event.preventDefault()
         event.stopPropagation()
       }
-      if (hasSubItems) this.handleToggle(index)
+      if (hasSubItems || (this.isOpen() && this.state.open !== index)) {
+        this.handleToggle(index)
+      }
       if (onClick) onClick(event)
     }
 
@@ -83,6 +87,11 @@ class Menu extends Component {
             )
           }
         />
+        {isOpen && (
+          <SubMenu onClose={() => this.handleToggle(index)}>
+            {this.state.subItems}
+          </SubMenu>
+        )}
       </Li>
     )
   }
