@@ -32,7 +32,7 @@
   - [x] ErepsLogo
   - [x] Iso9001Logo
   - [x] CertificationLogos
-  - [ ] HighlightedNumber
+  - [x] HighlightedNumber
   - [ ] OfferSchema
   - [ ] CoursesTable
   - [ ] CoursesTableRow
