@@ -2,7 +2,6 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import HighlightedNumber from './HighlightedNumber'
-import FaIcon from '../../base/FaIcon'
 
 storiesOf('Content/HighlightedNumber', module)
   .add('standard', () => (
