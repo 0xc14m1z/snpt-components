@@ -10,7 +10,9 @@ import logoMobile from './assets/logo-mobile.png'
 const SanitizedLink = ({ full, ...props }) => <Link {...props} />
 
 const StyledLink = styled(SanitizedLink)`
+  position: relative;
   display: inline-block;
+  z-index: 10;
 
   ${({ full }) =>
     full

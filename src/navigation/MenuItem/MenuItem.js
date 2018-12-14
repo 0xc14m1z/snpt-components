@@ -7,6 +7,7 @@ import styling from '../../styling'
 import Font from '../../base/Font'
 
 const StyledLink = styled(NavLink)`
+  position: relative;
   display: inline-block;
   padding-bottom: ${styling.gutters.sm};
   font-family: ${styling.variables.font};
@@ -14,6 +15,7 @@ const StyledLink = styled(NavLink)`
   color: white;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  z-index: 10;
 
   &:hover,
   &.active {

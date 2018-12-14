@@ -5,6 +5,16 @@ import styled from 'styled-components'
 import styling from '../../styling'
 import MenuItem from '../MenuItem'
 
+const Background = styled.div`
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+`
+
 const Container = styled.div`
   position: absolute;
   top: 100%;
@@ -17,6 +27,7 @@ const Container = styled.div`
   align-items: start;
   width: 280px;
   box-sizing: border-box;
+  z-index: 10;
 `
 
 const SubMenuItem = styled(MenuItem)`
@@ -34,11 +45,14 @@ const SubMenuItem = styled(MenuItem)`
 `
 
 const SubMenu = ({ children, onClose }) => (
-  <Container>
-    {React.Children.map(children, child => (
-      <SubMenuItem {...child.props} onClick={onClose} />
-    ))}
-  </Container>
+  <>
+    <Background onClick={onClose} />
+    <Container>
+      {React.Children.map(children, child => (
+        <SubMenuItem {...child.props} onClick={onClose} />
+      ))}
+    </Container>
+  </>
 )
 
 SubMenu.propTypes = {
