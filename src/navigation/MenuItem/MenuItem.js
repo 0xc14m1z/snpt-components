@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
@@ -21,44 +21,19 @@ const StyledLink = styled(NavLink)`
   }
 `
 
-class MenuItem extends PureComponent {
-  static propTypes = {
-    exact: PropTypes.bool,
-    to: PropTypes.string,
-    text: PropTypes.string.isRequired,
-    children: PropTypes.node,
-    onOpen: PropTypes.func
-  }
+const MenuItem = ({ to = '#', text, ...props }) => (
+  <StyledLink {...props} to={to}>
+    <Font>{text}</Font>
+  </StyledLink>
+)
 
-  hasChildren = () => !!this.props.children
-
-  shouldOpen = () => this.hasChildren() && this.props.onOpen
-
-  open = () => this.props.onOpen(this.props.children)
-
-  handleOpen = event => {
-    event.preventDefault()
-    event.stopPropagation()
-    if (this.shouldOpen()) {
-      this.open()
-    }
-  }
-
-  onClick = () => (this.shouldOpen() ? this.handleOpen : undefined)
-
-  to = () => (this.shouldOpen() ? '#' : this.props.to)
-
-  render() {
-    return (
-      <StyledLink
-        exact={this.props.exact}
-        to={this.to()}
-        onClick={this.onClick()}
-      >
-        <Font>{this.props.text}</Font>
-      </StyledLink>
-    )
-  }
+MenuItem.propsTypes = {
+  exact: PropTypes.bool,
+  to: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  children: PropTypes.node,
+  onClick: PropTypes.func,
+  className: PropTypes.string
 }
 
-export default MenuItem
+export default React.memo(MenuItem)
